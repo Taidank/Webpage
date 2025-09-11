@@ -1,0 +1,175 @@
+<!--
+File: index.html
+GUI Assignment: Creating Your First Web Page
+Tai Dao, UMass Lowell Managament Information System Major, tai_dao@student.uml.edu
+
+Website Description: 
+This website is just a informational website about who I am and what things I like. It has three sections, "Who I am","Hobbies", "Skills". I don't have any projects 
+So i can't add that section, Hoping the more I learn in this clas, I turn this website into a full fledge resume style type of website to showcase to employers.
+
+The elements I used in this website were <nav> to create navigation links, <UL> and <LI> to create my lists of things, <img> <a>, <div> to create containers to hold similar things,
+    <sections> and couple of more basic elemnts
+
+Sources: 
+https://www.w3schools.com/html/
+https://www.youtube.com/watch?v=wRNinF7YQqQ&ab_channel=BroCode
+https://www.youtube.com/watch?v=PcjvmYjFres&ab_channel=StephRan
+https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf
+https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
+https://www.w3schools.com/cssref/css_units.php
+
+Images drawn by me 
+
+Copyright (c) 2025 by Dao. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by Tai on September 6, 2025 at 2:50 PM
+-->
+<!DOCTYPE html>
+<html lang='en'>
+
+<!--Every HTML document has a head which to explain and set up what the website is about with it's Meta data things-->
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Welcome to My First Website</title>
+    <link href="files/css/style.css" rel="stylesheet">
+</head>
+
+<!--Header part of my website that welcomes users and has navigation jumps to get to other contents faster-->
+
+<body>
+    <header>
+        <h1> Welcome to my First Website</h1>
+        <br>
+        <nav>
+            <div id="Navigation">
+                <ul>
+                    <li><a href="#about-section">Who am I</a></li>
+                    <li><a href="#hobbies-section">Hobbies</a></li>
+                    <li><a href="#skills/projects-section">Skills/projects</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--First section of my website that just explains Who I am and my career goals in the future,
+     I have also implemeneted my social links at the bottom utlizing a division as a container to hold my social links-->
+        <section id="about-section">
+            <h2> Who Am I?</h2>
+            <img class="me" src="files/pictures/me.JPG" alt="Picture of me">
+            <p>My name is Tai, and I am currently a senior at the University of Massachusetts Lowell, where I am
+                pursuing a
+                degree in Management Information Systems with a minor in Computer Science. Over the years, I
+                have developed a strong interest in the intersection of business and technology. I enjoy exploring
+                how information systems can improve decision-making, efficiency, and problem-solving within
+                organizations.
+                At the same time, my background in computer science has given me valuable technical skills that allow me
+                to
+                approach challenges from both a strategic and hands-on perspective. Looking toward the future, I am
+                passionate about building a career where I can apply my skills to make a meaningful impact. My long-term
+                goals are to become either a Full-Stack Developer, contributing to the design and functionality of
+                applications, or a Cybersecurity Analyst, protecting systems from evolving threats.
+            </p>
+            <br>
+            <br>
+            <div class="socials">
+                <!--On the webpage it will show pictures but they are clickable pictures that links to my socials that are public-->
+                <a href="https://www.linkedin.com/in/taidao/"><img class="company_logos"
+                        src="files/pictures/linkedin.png" alt="linkedin logo"></a>
+                <a href="https://www.instagram.com/taidank/"><img class="company_logos"
+                        src="files/pictures/instagram.png" alt="instagram logo"></a>
+                <a href="https://www.youtube.com/@Swubway"><img class="company_logos" src="files/pictures/youtube.png"
+                        alt="linkedin logo"></a>
+            </div>
+        </section>
+
+        <!--Second section of my website are just my hobbies and my favorite spots to rock climbing utilzing tables to showcase them. There's a video of me climbing that loops and autoplays-->
+        <section id="hobbies-section">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Sleeping</li>
+                <li>Playing Video Games</li>
+                <li>Finding new food places to try</li>
+                <li>Rock climbing</li>
+                <li>Watching anime</li>
+                <li>Hiking</li>
+            </ul>
+            <br>
+            <table>
+                <!--Creating tables and adding entries to them (Adding new data cells)-->
+                <caption>Favorite Climbing Spots</caption>
+                <tr>
+                    <th>Company</th>
+                    <th>Location</th>
+                    <th>Rating</th>
+                </tr>
+                <tr>
+                    <td>Central Rock</td>
+                    <td>170 Alewife Brook Pkwy, Cambridge, MA 02138</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Central Rock</td>
+                    <td>20 Brattle St, Cambridge, MA 02138</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>Central Rock</td>
+                    <td>10 Adam Rd, Stoneham, MA 02180</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>Metro Rock</td>
+                    <td>1200 Constitution Ave, Littleton, MA 01460</td>
+                    <td>8</td>
+
+            </table>
+            <br>
+            <!--Adding video fo me climbing and setting it so it autoplays and looks back-->
+            <video width="500" height="300" autoplay loop>
+                <source src="files/videos/climbing.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <!--Third section of my website highlights my technical skills and projects I have worked on. These were created utilizing division containers and Unordered list-->
+        <section id="skills/projects-section">
+            <h3>Skills</h3>
+            <div class="Skills">
+                <img src="files/pictures/c.png" alt="C logo">
+                <img src="files/pictures/c++.png" alt="C++ logo">
+                <img src="files/pictures/SQL.png" alt="SQL logo">
+                <img src="files/pictures/python.png" alt="Python logo">
+                <img src="files/pictures/github.png" alt="Github logo">
+            </div>
+
+            <h4>Projects</h4>
+            <div class="projects">
+                <ul>
+                    <!--The title will show if your mouse is over the picture-->
+                    <li><img src="files/pictures/project.jpg" alt="summer research photo 2024"
+                            title="Summer Research project (2024)" width=500 height=500>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <footer class="site-footer">
+            <p>&copy; 2025 Tai Dao All rights reserved</p>
+            <p>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss"
+                        alt="Valid CSS!" />
+                </a>
+            </p>
+            <p>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                        src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+                </a>
+            </p>
+        </footer>
+    </main>
+</body>
+
+
+</html>

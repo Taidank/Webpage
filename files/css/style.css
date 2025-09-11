@@ -1,0 +1,144 @@
+/* <!--
+File: style.css
+GUI Assignment: Creating Your First Web Page
+Tai Dao, UMass Lowell Managament Information System Major, tai_dao@student.uml.edu
+
+This file is my styling file to give my webpage its visuals
+
+Copyright (c) 2025 by Dao. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by Tai on September 6, 2025 at 2:50 PM
+-->*/
+
+
+/*deleted white space around the body, so the color in the header fit the top*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*color and size of the header*/
+header {
+  background-color: #bfd6c4;
+  padding: 20px;
+}
+
+/*centering and fix spacing of the navigation links*/
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+  /*Same as above, deleted bullet points in the list*/
+#Navigation ul {
+  list-style-type: none;
+  display: flex;
+  background-color: #333333;
+}
+
+/*making the nav links in the list white making them into blocks for the hover effect*/
+#Navigation li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+
+/*
+section styling
+editing spacing for a full screen view
+utilzing flex so stack and center the contents
+added depth with the box shadow*/
+section {
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+/*
+selfshot
+centered the image
+make the shape of the container a circle
+adjusted the position of the image so its just my head*/
+
+.me {
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: 20%;
+}
+
+  /*basic paragraphs style changes*/
+p {
+  font-size: 18px;
+  line-height: 1;
+  margin: 5px auto;
+  padding: 0 10px;
+  max-width: 600px;
+  text-align: center;
+}
+
+/*centering*/
+.socials {
+  display: flex;
+  justify-content: center;
+
+}
+
+/*picture sizing and fitting*/
+.company_logos {
+  width: 200px;
+  height: 200px;
+  margin: 0 10px;
+  object-fit: contain;
+
+}
+
+  /*Allow users to know when they hover over the linked image*/
+.socials img:hover {
+  filter: brightness(85%);
+  outline: 2px solid #888;
+}
+
+ul {
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+}
+
+/*created the borders for the table*/
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 15px;
+}
+
+.Skills img {
+  width: 300px;
+  height: 150px;
+}
